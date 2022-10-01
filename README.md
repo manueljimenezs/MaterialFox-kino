@@ -1,3 +1,12 @@
+# MaterialFox kino
+
+This release includes the following fixes:
+
+![Preview](https://user-images.githubusercontent.com/15804572/193406807-7667da6f-71be-409c-a51c-da88f0d31510.png)
+
+* Titlebar bgcolor is darker matching to the chrome release
+* Support for multiaccount containers!!!
+
 # MaterialFox
 *A Material Design-inspired userChrome.css theme for Firefox*
 
