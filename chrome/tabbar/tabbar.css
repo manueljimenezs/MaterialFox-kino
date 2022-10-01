@@ -598,3 +598,14 @@ spacer[part="overflow-end-indicator"]
 		background: #DEDEE7;
 	}
 }
+
+/* multi-account-containers tab indicator */
+.tab-content {
+	padding: 0 var(--inline-tab-padding);
+	border-top: var(--identity-icon-color) 2px solid;
+	}
+
+.tab-context-line {
+	display: none;
+	visibility: hidden !important;
+}
