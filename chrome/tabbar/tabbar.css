@@ -532,6 +532,8 @@
 	transition-property: top, bottom, left, right, width, height, border-radius;
 	transition-duration: .225s !important;
 	transition-timing-function: var(--ease-out) !important;
+	/*colortab animation fix*/
+	display: none !important;
 }
 
 .tab-bottom-line
@@ -587,5 +589,12 @@ spacer[part="overflow-end-indicator"]
 			margin-top: .5px !important;
 			margin-bottom: -.5px !important;
 		}
+	}
+}
+
+/* more contrast between tabs an bg like in macos's chrome */
+@media (prefers-color-scheme: light) {
+	#TabsToolbar:not(:-moz-window-inactive) {
+		background: #DEDEE7;
 	}
 }
