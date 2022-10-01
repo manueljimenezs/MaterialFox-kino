@@ -592,11 +592,17 @@ spacer[part="overflow-end-indicator"]
 	}
 }
 
-/* more contrast between tabs an bg like in macos's chrome */
+/* more contrast between tabs and bg like in macos's chrome */
 @media (prefers-color-scheme: light) {
 	#TabsToolbar:not(:-moz-window-inactive) {
 		background: #DEDEE7;
 	}
+}
+
+/* fix private mode titlebar color*/
+#main-window[privatebrowsingmode="temporary"] #TabsToolbar {
+	color: white;
+	background: #1f1f20;
 }
 
 /* multi-account-containers tab indicator */
