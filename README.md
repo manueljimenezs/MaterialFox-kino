@@ -4,8 +4,7 @@ This release includes the following fixes:
 
 ![Preview](https://user-images.githubusercontent.com/15804572/193406807-7667da6f-71be-409c-a51c-da88f0d31510.png)
 
-* Titlebar bgcolor is darker matching to the chrome release
-* Support for multiaccount containers!!!
+* Support for Multi-account Containers (tabs inside a container are indicated with a line over the matching container color)
 
 # MaterialFox
 *A Material Design-inspired userChrome.css theme for Firefox*
