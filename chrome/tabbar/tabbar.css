@@ -592,12 +592,23 @@ spacer[part="overflow-end-indicator"]
 	}
 }
 
-/* more contrast between tabs and bg like in macos's chrome */
-@media (prefers-color-scheme: light) {
+/* more contrast between tabs and bg (when not translucent)*/
+@media not (-moz-mac-big-sur-theme) and (prefers-color-scheme: light) {
 	#TabsToolbar:not(:-moz-window-inactive) {
 		background: #DEDEE7;
 	}
 }
+
+/* transparent titlebar*/
+@media (-moz-mac-big-sur-theme) {
+	:root:not(:-moz-window-inactive) #navigator-toolbox {
+		-moz-appearance: -moz-mac-source-list !important;
+	  }
+	   
+	  :root:-moz-window-inactive #navigator-toolbox {
+		-moz-appearance: -moz-mac-source-list !important;
+	  }
+	}
 
 /* fix private mode titlebar color*/
 #main-window[privatebrowsingmode="temporary"] #TabsToolbar {

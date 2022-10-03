@@ -216,3 +216,10 @@
 	--toolbarbutton-hover-background: hsl(206, 5%, 26%) !important;
 	--toolbarbutton-active-background: hsl(210, 4%, 31%) !important;
 }
+
+/* improve contrast on dark mode and translucency */
+@media (-moz-mac-big-sur-theme) and (prefers-color-scheme: dark) {
+	:root {
+		--toolbar-bgcolor: rgb(23, 23, 29) !important;
+	}
+}
